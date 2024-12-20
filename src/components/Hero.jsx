@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../common/Header'
 import greenLine from '../assets/images/webp/green-line.webp'
 import hero from '../assets/images/webp/hero.webp'
@@ -7,8 +7,24 @@ import singleLine from "../assets/images/webp/single-line.webp"
 import halfStar from '../assets/images/png/half-star.png'
 
 const Hero = () => {
+  const [formValue, setFormValue] = useState({
+    website: "",
+  })
+
+  const handleSubmit = (e) => {
+    setFormValue({
+      website: "",
+    })
+    e.preventDefault();
+  }
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormValue({ ...formValue, [id]: value });
+  };
+  
   return (
-    <div className='bg-darkGreen '>
+    <div className='bg-darkGreen mb-80 relative'>
       <div className='max-w-[1440px] mx-auto relative pb-[322px] max-md:pb-52 max-sm:pb-[175px]'>
         <div className='max-w-[1358px] px-4 mx-auto'>
           <Header myClass='absolute top-0 right-0 ' />
@@ -16,13 +32,10 @@ const Hero = () => {
           <img src={halfStar} alt="half-star" className='absolute bottom-0 right-0 h-[150px] max-sm:h-32 ' />
           <h1 className='max-md:text-6xl max-sm:text-[60px] max-sm:leading-[52px] font-bold text-[120px] leading-[104px] text-white font-sohne max-w-[619px] mx-auto text-center relative pt-[39px] pb-7 max-sm:pt-[51px]'>MAKE MARKETING A <span className='relative'>GROWTH <img src={greenLine} alt="green-line" className='h-5 absolute left-1/2 -translate-x-1/2' /></span> MACHINE</h1>
           <p className='relative max-w-[656px] mx-auto text-center text-white text-2xl max-md:text-[22px] leading-[30px] font-maisonLight pb-6 max-sm:pb-[30px] max-sm:leading-7'>We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.</p>
-          <form id='myform' action="myform" className='flex items-center border-2 rounded-[50px] border-white  pr-[37.95px] relative mx-auto max-w-[448px] max-sm:px-6 '>
-            <input id='website' type="text" placeholder='Enter Your Website' className='bg-transparent w-full h-full py-[22px] sm:pl-[34.27px] max-sm:py-[22px] outline-none font-maisonBook text-[15px] leading-5 text-white text-opacity-40' />
+          <form onSubmit={handleSubmit} id='myform' action="myform" className='flex items-center border-2 rounded-[50px] border-white  pr-[37.95px] relative mx-auto max-w-[448px] max-sm:px-6 '>
+            <input required onChange={handleChange} value={formValue.website} id='website' type="text" placeholder='Enter Your Website' className='bg-transparent w-full h-full py-[22px] sm:pl-[34.27px] max-sm:py-[22px] outline-none font-maisonBook text-[15px] leading-5 text-white' />
             <button className='font-maisonDemi text-[15px] leading-5 text-white hover:text-lemon transition-all duration-300'>Analyze</button>
           </form>
-        </div>
-        <div className='absolute -bottom-4 z-0 w-full'>
-          <img src={singleLine} alt="single-line" className='absolute w-full' />
         </div>
         <div className='absolute left-1/2 -translate-x-1/2 h-[490px] w-full max-w-[871px] max-lg:h-96 max-md:h-64 max-sm:h-[329px] max-sm:w-[328px] -bottom-[245px] max-lg:-bottom-[192px] max-md:-bottom-[123px] max-sm:-bottom-[203px]'>
           <div className='relative'>
@@ -31,6 +44,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+        <div className='absolute -bottom-4 -z-10 w-full'>
+          <img src={singleLine} alt="single-line" className='absolute w-full' />
+        </div>
     </div>
   )
 }
