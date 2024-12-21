@@ -45,12 +45,26 @@
 .custom-select option {
   background-color: black;
 }
-input::placeholder{
+
+input::placeholder {
   color: white;
   opacity: 60%;
 }
 
-/* .brands .slick-list .slick-track {
+.brands .slick-list .slick-track {
   display: flex;
   justify-content: space-between;
-} */
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #0d99a0 !important;
+}
+
+@media (max-width: 600px) {
+  .slick-dots li button:before {
+    font-size: 9px !important;
+  }
+}
