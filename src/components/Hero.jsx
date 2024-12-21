@@ -32,7 +32,7 @@ const Hero = () => {
           <img src={halfStar} alt="half-star" className='absolute bottom-0 right-0 h-[150px] max-sm:h-32 ' />
           <h1 className='max-md:text-6xl max-sm:text-[60px] max-sm:leading-[52px] font-bold text-[120px] leading-[104px] text-white font-sohne max-w-[619px] mx-auto text-center relative pt-[39px] pb-7 max-sm:pt-[51px]'>MAKE MARKETING A <span className='relative'>GROWTH <img src={greenLine} alt="green-line" className='h-5 absolute left-1/2 -translate-x-1/2' /></span> MACHINE</h1>
           <p className='relative max-w-[656px] mx-auto text-center text-white text-2xl max-md:text-[22px] leading-[30px] font-maisonLight pb-6 max-sm:pb-[30px] max-sm:leading-7'>We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.</p>
-          <form onSubmit={handleSubmit} id='myform' action="myform" className='flex items-center border-2 rounded-[50px] border-white  pr-[37.95px] relative mx-auto max-w-[448px] max-sm:px-6 '>
+          <form onSubmit={handleSubmit} id='myform' className='flex items-center border-2 rounded-[50px] border-white  pr-[37.95px] relative mx-auto max-w-[448px] max-sm:px-6 '>
             <input required onChange={handleChange} value={formValue.website} id='website' type="text" placeholder='Enter Your Website' className='bg-transparent w-full h-full py-[22px] sm:pl-[34.27px] max-sm:py-[22px] outline-none font-maisonBook text-[15px] leading-5 text-white' />
             <button className='font-maisonDemi text-[15px] leading-5 text-white hover:text-lemon transition-all duration-300'>Analyze</button>
           </form>
