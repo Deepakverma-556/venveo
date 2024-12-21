@@ -32,5 +32,34 @@ export const NAV_LIST = [
 ]
 
 export const COMAPNY_BRAND_LIST = [
-    WSJ, ENTREPRENEUR, FORTUNE, FORBES, INC
+    {
+        image: WSJ,
+        alt: 'wsj',
+        myHeigth: '28',
+        myWidth:'49.53'
+    },
+    {
+        image: ENTREPRENEUR,
+        alt: 'entrepreneur',
+        myHeigth: '36',
+        myWidth: '183.46'
+    },
+    {
+        image: FORTUNE,
+        alt: 'fortue',
+        myHeigth: '116',
+        myWidth: '26.89'
+    },
+    {
+        image: FORBES,
+        alt: 'forbes',
+        myHeigth: '27',
+        myWidth: '103'
+    },
+    {
+        image: INC,
+        alt: 'inc',
+        myHeigth: '28',
+        myWidth: '81'
+    },
 ]
