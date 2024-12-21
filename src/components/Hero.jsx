@@ -25,7 +25,7 @@ const Hero = () => {
   };
   
   return (
-    <div className='bg-darkGreen mb-80 relative'>
+    <div className='bg-darkGreen relative'>
       <div className='max-w-[1440px] mx-auto relative pb-[322px] max-md:pb-52 max-sm:pb-[175px]'>
         <div className='max-w-[1358px] px-4 mx-auto'>
           <Header myClass='absolute top-0 right-0 ' />

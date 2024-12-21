@@ -16,6 +16,7 @@ module.exports = {
         maisonMedium: ["MaisonNeueMedium", "sans-serif"],
         maisonBook: ["MaisonNeueBook", "sans-serif"],
         maisonDemi: ["MaisonNeueDemi", "sans-serif"],
+        maisonMono: ["MaisonNeueMono", "sans-serif"],
       },
       colors: {
         darkGreen: '#097980',

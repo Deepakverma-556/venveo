@@ -23,6 +23,11 @@
 }
 
 @font-face {
+  font-family: "MaisonNeueMono";
+  src: url(./assets/fonts/Maison-Neue-Mono.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "MaisonNeueLight";
   src: url(./assets/fonts/MaisonNeue-Light.ttf) format("truetype");
 }
