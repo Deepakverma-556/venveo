@@ -57,7 +57,7 @@ const CompanyBrands = () => {
         ]
     };
     return (
-        <div className='pt-[314px] max-md:pt-60 max-sm:pt-72 brands relative'>
+        <div className='pt-[314px] max-md:pt-60 max-sm:pt-[259px] brands relative'>
             <div className='max-w-[1057px] mx-auto px-4'>
                 <Description text='Featured in' myClass='!leading-[15px] text-center' />
                 <div className='pt-[49px] max-md:pt-10 max-sm:pt-5'>
@@ -70,7 +70,7 @@ const CompanyBrands = () => {
                     </Slider>
                 </div>
             </div>
-            <img src={doubleLine} alt="double-line" className='absolute h-[43px] -bottom-[74px] w-full object-cover' />
+            <img src={doubleLine} alt="double-line" className='absolute h-[43px] -bottom-[74px] w-full max-lg:object-cover' />
         </div>
     )
 }
