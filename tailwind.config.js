@@ -20,7 +20,8 @@ module.exports = {
       },
       colors: {
         darkGreen: '#097980',
-        lemon: '#D2F038'
+        lemon: '#D2F038',
+        babyGreen:'#00AFB5'
       },
       backgroundImage: {
         star: "url('./assets/images/webp/hero-star.webp')"

@@ -11,6 +11,7 @@ import farnsWorth from "../assets/images/webp/farns-worth.webp"
 import usLbm from "../assets/images/webp/us-lbm.webp"
 import Description from "../common/Description"
 import Heading from "../common/Heading"
+import { Traffic, Campaigns, Leads, Disconnect } from "./icons"
 
 export const NAV_LIST = [
     {
@@ -67,7 +68,7 @@ export const SATISIED_CLIENT_LIST = [
     {
         bgImage: darkGreen,
         logo: amberBook,
-        bgImageAlt:"dark-green",
+        bgImageAlt: "dark-green",
         logoAlt: "amber-book",
         company: "Education Company",
         title: <Description text="Driving digital revenue for over 1,000+ satisfied clients." myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight' />,
@@ -111,4 +112,44 @@ export const SATISIED_CLIENT_LIST = [
         adLeadsText: "Ad Leads",
         webTrafficText: "Web Traffic",
     },
+]
+
+export const MARKETING_LIST = [
+    {
+        myIcon: <Traffic />,
+        title: <Description text="My website isn't getting enough traffic" myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight ' />,
+        description: <Description text='Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.' />,
+        listOne: "Boost your presence in search results",
+        listTwo: "Capture targeted site traffic",
+        listThree: "Turn site visitors into customers",
+        myLink: "Explore SEO Service",
+    },
+    {
+        myIcon: <Campaigns/>,
+        title: <Description text="My CPL from digital ad campaigns is too high" myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight ' />,
+        description: <Description text='Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.' />,
+        listOne: "Refine ad targeting",
+        listTwo: "Engage your audience where they browse online",
+        listThree: "Maximize paid ad budget",
+        myLink: "Explore SEO Service",
+    },
+    {
+        myIcon: <Leads />,
+        title: <Description text="My website isn’t generating enough leads" myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight ' />,
+        description: <Description text='Struggling to get qualified leads in your pipeline? Turn up the dial on your lead generation with digital marketing plans, tailored to your goals and budget.' />,
+        listOne: "Fill up your lead pipeline",
+        listTwo: "Reach your most valuable audience",
+        listThree: "Maximize conversion opportunities",
+        myLink: "Explore SEO Service",
+    },
+    {
+        myIcon: <Disconnect />,
+        title: <Description text="My marketing and sales data is disconnected" myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight ' />,
+        description: <Description text='Don’t let leads slip through the cracks. Unify your sales and marketing efforts with Nutshell and MarketingCloudFX, to provide end-to-end reporting and analysis of your data.' />,
+        listOne: "Unify sales and marketing data",
+        listTwo: "Prioritize leads with data-backed insights",
+        listThree: "Turn opportunities into closed deals",
+        myLink: "Explore SEO Service",
+    },
+
 ]
