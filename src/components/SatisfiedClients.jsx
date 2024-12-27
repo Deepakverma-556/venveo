@@ -3,12 +3,12 @@ import Description from '../common/Description'
 import Heading from '../common/Heading'
 import redLine from '../assets/images/webp/red-line.webp'
 import { SATISIED_CLIENT_LIST } from '../utils/helper'
-import { LearnMoreArrow } from '../utils/icons'
+import CustomLink from '../common/CustomLink'
 
 const SatisfiedClients = () => {
     return (
         <div className='pt-[217px] max-sm:pt-[127px] mx-auto max-w-[1440px]'>
-            <Description text='Driving digital revenue for over' myClass='text-center !leading-[30px] max-sm:!text-2xl max-sm:!leading-[26px] !font-light !text-3xl pb-[7px]' />
+            <Description text='Driving digital revenue for over' myClass='text-center !leading-[30px] max-sm:!text-2xl max-sm:!leading-[26px] !font-maisonLight !text-3xl pb-[7px]' />
             <Heading secondText='SATISFIED CLIENTS.' spanText='1,400+' image={redLine} myAlt='red-ine' imgClass='h-3 max-sm:h-2 max-sm:bottom-2 max-md:w-[84px] w-[119px] !-translate-x-[85px] max-md:!-translate-x-16 bottom-0' />
             <div className='flex max-[1400px]:flex-wrap justify-center lg:gap-[60px] pt-7 max-[1400px]:pt-[88px] max-lg:pt-16 max-md:pt-12'>
                 {SATISIED_CLIENT_LIST.map((obj, i) => (
@@ -19,7 +19,7 @@ const SatisfiedClients = () => {
                                 <img src={obj.logo} alt={obj.logoAlt} className='h-9' />
                                 <div className='py-6'>{obj.title}</div>
                                 {obj.description}
-                                <a href="#learn" className='flex items-center font-maisonDemi text-[15px] leading-5 gap-2 pt-[54px] group hover:!text-lemon transition-all duration-300 max-w-max'>Learn More <LearnMoreArrow myClass='group-hover:fill-lemon transition-all duration-300' /></a>
+                                    <CustomLink text="LearnMore" myHref='learn' myClass="mt-[54px]" />
                                 <div className='absolute rounded-full -top-3 group-hover/card:bg-black transition-all duration-300 py-[7px] pl-3 pr-6 max-sm:hidden'><p className='text-black font-maisonDemi text-xs leading-5 group-hover/card:text-white transition-all duration-300'>{obj.company}</p></div>
                             </div>
                             <div className='flex items-center px-[29px] max-md:px-3 justify-between pt-[13px]'>

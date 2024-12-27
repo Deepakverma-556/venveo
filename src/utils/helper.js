@@ -12,6 +12,11 @@ import usLbm from "../assets/images/webp/us-lbm.webp"
 import Description from "../common/Description"
 import Heading from "../common/Heading"
 import { Traffic, Campaigns, Leads, Disconnect } from "./icons"
+import homeDepot from "../assets/images/webp/home-depot.webp"
+import aia from "../assets/images/webp/aia.webp"
+import lowes from "../assets/images/webp/lowes.webp"
+import risinger from "../assets/images/webp/risinger.webp"
+import houzz from "../assets/images/webp/houzz.webp"
 
 export const NAV_LIST = [
     {
@@ -125,7 +130,7 @@ export const MARKETING_LIST = [
         myLink: "Explore SEO Service",
     },
     {
-        myIcon: <Campaigns/>,
+        myIcon: <Campaigns />,
         title: <Description text="My CPL from digital ad campaigns is too high" myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight ' />,
         description: <Description text='Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.' />,
         listOne: "Refine ad targeting",
@@ -152,4 +157,27 @@ export const MARKETING_LIST = [
         myLink: "Explore SEO Service",
     },
 
+]
+
+export const INDUSTRY_LOGO_LIST = [
+    {
+        image: homeDepot,
+        logoAlt: "home-depot",
+    },
+    {
+        image: aia,
+        logoAlt: "aia",
+    },
+    {
+        image: lowes,
+        logoAlt: "lowes",
+    },
+    {
+        image: risinger,
+        logoAlt: "risinger",
+    },
+    {
+        image: houzz,
+        logoAlt: "houzz",
+    },
 ]

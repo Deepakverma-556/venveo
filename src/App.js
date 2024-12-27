@@ -1,7 +1,10 @@
 import './App.css';
 import CompanyBrands from './components/CompanyBrands';
 import DigitalMarketing from './components/DigitalMarketing';
+import GrowthPartner from './components/GrowthPartner';
 import Hero from './components/Hero';
+import LearnFromUs from './components/LearnFromUs';
+import Outsmart from './components/Outsmart';
 import SatisfiedClients from './components/SatisfiedClients';
 
 function App() {
@@ -10,7 +13,10 @@ function App() {
       <Hero />
       <CompanyBrands />
       <SatisfiedClients />
-      <DigitalMarketing/>
+      <DigitalMarketing />
+      <Outsmart />
+      <GrowthPartner />
+      <LearnFromUs />
     </>
   );
 }
