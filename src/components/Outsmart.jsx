@@ -21,7 +21,7 @@ const Outsmart = () => {
         setFormValue({ ...formValue, [id]: value });
     };
     return (
-        <div className='mt-[129px] bg-yellowSection bg-cover bg-no-repeat pt-[60px] pb-20'>
+        <div className='mt-[129px] bg-yellowSection bg-cover bg-no-repeat pt-[60px] pb-20 max-sm:pt-9 max-sm:pb-[45px]'>
             <div className='max-w-[1118px] px-4 mx-auto relative'>
                 <div className='flex flex-wrap -mx-3'>
                     <div className='w-1/2 px-3 max-md:w-full '>

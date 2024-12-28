@@ -1,23 +1,14 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import CompanyBrands from './components/CompanyBrands';
-import DigitalMarketing from './components/DigitalMarketing';
-import GrowthPartner from './components/GrowthPartner';
-import Hero from './components/Hero';
-import LearnFromUs from './components/LearnFromUs';
-import Outsmart from './components/Outsmart';
-import SatisfiedClients from './components/SatisfiedClients';
+import Home from './components/view/Home';
 
 function App() {
   return (
-    <>
-      <Hero />
-      <CompanyBrands />
-      <SatisfiedClients />
-      <DigitalMarketing />
-      <Outsmart />
-      <GrowthPartner />
-      <LearnFromUs />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

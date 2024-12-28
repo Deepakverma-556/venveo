@@ -181,3 +181,18 @@ export const INDUSTRY_LOGO_LIST = [
         logoAlt: "houzz",
     },
 ]
+
+export const MY_TAB = [
+    {
+        title: "Industury Expertise",
+        domain: "industry expertise"
+    },
+    {
+        title: "ROI Focused",
+        domain: "roi focused",
+    },
+    {
+        title: "Proprietary",
+        domain: "proprietary"
+    }
+]

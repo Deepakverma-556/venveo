@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import logo from '../assets/images/png/venveo-logo.png'
 import { NAV_LIST } from '../utils/helper'
 import { RightArrow, SearchIcon } from '../utils/icons'
+import CustomButton from './CustomButton'
 
 const Header = ({ myClass }) => {
     const [open, setOpen] = useState()
@@ -46,7 +47,7 @@ const Header = ({ myClass }) => {
                         </a>
                     </div>
                 </div>
-                <button className='flex items-center max-lg:py-[20.5px] py-[32.5px] px-[31.63px] bg-lemon gap-[5px] text-[15px] font-maisonDemi leading-[15px] font-semibold transition-all duration-300 hover:bg-black hover:text-white right-arrow'>Let's Talk <RightArrow /></button>
+                <CustomButton text="Let's Talk" myClass="max-lg:py-[20.5px] py-[32.5px] px-[31.63px]" />
             </div>
             <div
                 className={`md:hidden z-30 cursor-pointer`}
@@ -71,7 +72,7 @@ const Header = ({ myClass }) => {
                     <a href="#search" className='search-icon group max-md:mx-auto'>
                         <SearchIcon myclass='group-hover:fill-black transition-all duration-300' stroke='group-hover:stroke-black transition-all duration-300' />
                     </a>
-                    <button className='flex items-center max-lg:py-[20.5px] py-[32.5px] px-[31.63px] bg-lemon gap-[5px] text-[15px] font-maisonDemi leading-[15px] font-semibold transition-all duration-300 hover:bg-black hover:text-white right-arrow'>Let's Talk <RightArrow /></button>
+                    <CustomButton text="Let's Talk" myClass="max-lg:py-[20.5px] py-[32.5px] px-[31.63px]" />
                 </div>
             </div>
         </div>
