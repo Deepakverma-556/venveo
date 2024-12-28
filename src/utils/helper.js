@@ -17,6 +17,9 @@ import aia from "../assets/images/webp/aia.webp"
 import lowes from "../assets/images/webp/lowes.webp"
 import risinger from "../assets/images/webp/risinger.webp"
 import houzz from "../assets/images/webp/houzz.webp"
+import jon from "../assets/images/webp/Jon-vaughan.webp"
+import michael from "../assets/images/webp/michael.webp"
+import grantFarnsWorth from "../assets/images/webp/grant-farnsworth.webp"
 
 export const NAV_LIST = [
     {
@@ -195,4 +198,31 @@ export const MY_TAB = [
         title: "Proprietary",
         domain: "proprietary"
     }
+]
+
+export const ACTUAL_RESULT_LIST = [
+    {
+        image: jon,
+        myAlt:"jon",
+        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+        name: <Description myClass="!text-white !text-center" text="Jon Vaughan," />,
+        address: <Description myClass="!text-white !text-center" text="REGIONAL VP-SE AT US LBM" />,
+        logo: usLbm,
+    },
+    {
+        image: michael,
+        myAlt:"michael",
+        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+        name: <Description myClass="!text-white !text-center" text="Michael," />,
+        address: <Description myClass="!text-white !text-center" text="REGIONAL VP-SE AT US LBM" />,
+        logo: usLbm,
+    },
+    {
+        image: grantFarnsWorth,
+        myAlt:"grant-farnsworth",
+        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+        name: <Description myClass="!text-white !text-center" text="grant Farnsworth," />,
+        address: <Description myClass="!text-white !text-center" text="REGIONAL VP-SE AT US LBM" />,
+        logo: usLbm,
+    },
 ]

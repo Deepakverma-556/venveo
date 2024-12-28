@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Heading from '../common/Heading'
 import Description from '../common/Description'
 import redUnderline from '../assets/images/webp/red-underline.webp'
@@ -21,7 +21,7 @@ import growthRate from "../assets/images/webp/growth-rate.webp"
 
 
 const GrowthPartner = () => {
-    const [open, setOpen] = useState()
+    const [open, setOpen] = useState(MY_TAB[0].domain)
     const navigate = useNavigate()
 
     const handleClick = (index) => {

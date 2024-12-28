@@ -65,7 +65,13 @@ input::placeholder {
   padding-bottom: 6px;
 }
 
-.slick-dots li button:before {
+/* .actual-result .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.brands .slick-dots li button:before {
   font-size: 12px !important;
   color: #0d99a0 !important;
 }

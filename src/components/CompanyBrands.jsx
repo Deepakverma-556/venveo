@@ -2,8 +2,6 @@ import React from 'react'
 import Description from '../common/Description'
 import Slider from 'react-slick';
 import { COMAPNY_BRAND_LIST } from '../utils/helper';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import doubleLine from '../assets/images/webp/double-line.webp'
 
 const CompanyBrands = () => {
