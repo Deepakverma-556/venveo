@@ -34,7 +34,7 @@ const Hero = () => {
           <img src={halfStar} alt="half-star" className='absolute bottom-0 right-0 h-[150px] max-sm:h-32 ' />
           <Heading myClass='max-md:!text-6xl max-sm:!text-[60px] max-sm:!leading-[52px] !text-[120px] !leading-[104px] !text-white !max-w-[619px] mx-auto pt-[39px] pb-7 max-sm:pt-[51px] relative' text='MAKE MARKETING A' secondText='MACHINE' spanText='GROWTH' image={greenLine} myAlt='green-line' imgClass=' h-5'/>
           <p className='relative max-w-[656px] mx-auto text-center text-white text-2xl max-md:text-[22px] leading-[30px] font-maisonLight pb-6 max-sm:pb-[30px] max-sm:leading-7'>We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.</p>
-          <CustomInput myPlaceholder='Enter Your Website' myType='text' text='Analyze' customSubmit={handleSubmit} customChange={handleChange} myValue={formValue.website} inputId='website' />
+          <CustomInput myPlaceholder='Enter Your Website' myType='text' text='Analyze' customSubmit={handleSubmit} customChange={handleChange} myValue={formValue.website} inputId='website' myClass="!pr-[37.95px]" inputClass="!pl-[34.27px]" />
         </div>
         <div className='absolute left-1/2 -translate-x-1/2 h-[490px] w-full max-w-[871px] max-lg:h-96 max-md:h-64 max-sm:h-[329px] max-sm:w-[328px] -bottom-[245px] max-lg:-bottom-[192px] max-md:-bottom-[123px] max-sm:-bottom-[203px]'>
           <div className='relative'>

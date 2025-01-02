@@ -23,16 +23,20 @@ module.exports = {
         darkGreen: '#097980',
         lemon: '#D2F038',
         babyGreen: '#00AFB5',
-        red:"#FF4242"
+        red: "#FF4242"
       },
       backgroundImage: {
         star: "url('./assets/images/webp/hero-star.webp')",
-        yellowSection : "url('./assets/images/webp/yellow-bg-section.webp')",
-        industry : "url('./assets/images/webp/industry.webp')",
-        focused : "url('./assets/images/webp/focused.webp')",
-        proprietary : "url('./assets/images/webp/proprietary.webp')",
-        actualResult : "url('./assets/images/webp/actual-result-section.webp')",
-        contractors : "url('./assets/images/webp/contractors.webp')",
+        yellowSection: "url('./assets/images/webp/yellow-bg-section.webp')",
+        industry: "url('./assets/images/webp/industry.webp')",
+        focused: "url('./assets/images/webp/focused.webp')",
+        proprietary: "url('./assets/images/webp/proprietary.webp')",
+        actualResult: "url('./assets/images/webp/actual-result-section.webp')",
+        contractors: "url('./assets/images/webp/contractors.webp')",
+        marketing: "url('./assets/images/webp/marketing.webp')",
+        lead: "url('./assets/images/webp/lead-gen.webp')",
+        ecommerce: "url('./assets/images/webp/ecommerce.webp')",
+        goals: "url('./assets/images/webp/goals.webp')",
       }
     },
   },

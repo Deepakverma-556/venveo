@@ -19,7 +19,7 @@ const SatisfiedClients = () => {
                                 <img src={obj.logo} alt={obj.logoAlt} className='h-9' />
                                 <div className='py-6'>{obj.title}</div>
                                 {obj.description}
-                                    <CustomLink text="LearnMore" myHref='learn' myClass="mt-[54px]" />
+                                <CustomLink text="LearnMore" myHref='learn' myClass="mt-[54px]" />
                                 <div className='absolute rounded-full -top-3 group-hover/card:bg-black transition-all duration-300 py-[7px] pl-3 pr-6 max-sm:hidden'><p className='text-black font-maisonDemi text-xs leading-5 group-hover/card:text-white transition-all duration-300'>{obj.company}</p></div>
                             </div>
                             <div className='flex items-center px-[29px] max-md:px-3 justify-between pt-[13px]'>

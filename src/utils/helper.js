@@ -195,34 +195,87 @@ export const MY_TAB = [
         domain: "roi focused",
     },
     {
-        title: "Proprietary",
-        domain: "proprietary"
+        title: "Proprietary Technology",
+        domain: "proprietary technology"
     }
 ]
 
 export const ACTUAL_RESULT_LIST = [
     {
         image: jon,
-        myAlt:"jon",
-        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+        myAlt: "jon",
+        description: "\“They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.\”",
         name: <Description myClass="!text-white !text-center" text="Jon Vaughan," />,
         address: <Description myClass="!text-white !text-center" text="REGIONAL VP-SE AT US LBM" />,
         logo: usLbm,
     },
     {
         image: michael,
-        myAlt:"michael",
-        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+        myAlt: "michael",
+        description: "\“They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.\”",
         name: <Description myClass="!text-white !text-center" text="Michael," />,
         address: <Description myClass="!text-white !text-center" text="REGIONAL VP-SE AT US LBM" />,
         logo: usLbm,
     },
     {
         image: grantFarnsWorth,
-        myAlt:"grant-farnsworth",
-        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+        myAlt: "grant-farnsworth",
+        description: "\“They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.\”",
         name: <Description myClass="!text-white !text-center" text="grant Farnsworth," />,
         address: <Description myClass="!text-white !text-center" text="REGIONAL VP-SE AT US LBM" />,
         logo: usLbm,
+    },
+]
+
+export const MULTI_CHANNEL_LIST = [
+    {
+        myOption: "MULTI-CHANNEL-MARKETING",
+        title: "How to Get Your Product into Lowe's",
+        description: <Description text="Understanding the process and maximize the opportunities" />,
+    },
+    {
+        myOption: "MULTI-CHANNEL-MARKETING",
+        title: "Get Your Sales Team Ready for Digital Leads",
+        description: <Description text="unlock substantial business growth by enhancing collaboration skills and digital marketing expertise" />,
+    },
+    {
+        myOption: "MULTI-CHANNEL-MARKETING",
+        title: "How to Sell Building Materials Online",
+        description: <Description text="Explore how selling building materials online opens up wider audiences, efficient sales and insightful data," />,
+    },
+]
+
+export const FOOTER_LINK_LIST = [
+    {
+        title: "HOW WE HELP",
+        linkOne: "Drive More Awareness",
+        linkTwo: "Get More Customers",
+        linkThree: "Build Your Brand",
+        linkFour: "Improve Your Reputation",
+        linkFive: "Track Results"
+    },
+    {
+        title: "WHO WE HELP",
+        linkOne: "Digital Advertising",
+        linkTwo: "Search Engine Ranking",
+        linkThree: "Contact Marketing",
+        linkFour: "Programic Advertising",
+        linkFive: "Email Marketing"
+    },
+    {
+        title: "WHY VENVEO",
+        linkOne: "About Us",
+        linkTwo: "Careers",
+        linkThree: "Growth Studies",
+        linkFour: "Testimonials",
+        linkFive: ""
+    },
+    {
+        title: "RESOURCES",
+        linkOne: "Articals",
+        linkTwo: "News",
+        linkThree: "Webinars",
+        linkFour: "EBooks",
+        linkFive: "Podcast"
     },
 ]

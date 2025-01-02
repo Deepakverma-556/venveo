@@ -8,6 +8,10 @@ import DigitalMarketing from "../DigitalMarketing"
 import Outsmart from "../Outsmart"
 import GrowthPartner from "../GrowthPartner"
 import ActualResult from "../ActualResult"
+import LearnFromUs from '../LearnFromUs';
+import MultiChannel from '../MultiChannel';
+import YourGoals from '../YourGoals';
+import Footer from '../Footer';
 const Home = () => {
     return (
         <>
@@ -17,7 +21,11 @@ const Home = () => {
             <DigitalMarketing />
             <Outsmart />
             <GrowthPartner />
-            <ActualResult/>
+            <ActualResult />
+            <LearnFromUs />
+            <MultiChannel />
+            <YourGoals />
+            <Footer/>
         </>
     )
 }
