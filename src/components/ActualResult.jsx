@@ -18,13 +18,13 @@ const ActualResult = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 1.69,
         slidesToScroll: 1,
         arrows: false,
         centerMode: true,
         responsive: [
             {
-                breakpoint: 780,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

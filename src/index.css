@@ -52,6 +52,10 @@ input::placeholder {
   color: white;
   opacity: 60%;
 }
+.custom-input input::placeholder {
+  color: white;
+  opacity: 100%;
+}
 
 .my-input input::placeholder {
   color: black;

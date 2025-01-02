@@ -11,7 +11,7 @@ import farnsWorth from "../assets/images/webp/farns-worth.webp"
 import usLbm from "../assets/images/webp/us-lbm.webp"
 import Description from "../common/Description"
 import Heading from "../common/Heading"
-import { Traffic, Campaigns, Leads, Disconnect } from "./icons"
+import { Traffic, Campaigns, Leads, Disconnect, EyeIcon, DollarIcon, ToolIcon, StickerIcon, ResultIcon } from "./icons"
 import homeDepot from "../assets/images/webp/home-depot.webp"
 import aia from "../assets/images/webp/aia.webp"
 import lowes from "../assets/images/webp/lowes.webp"
@@ -278,4 +278,35 @@ export const FOOTER_LINK_LIST = [
         linkFour: "EBooks",
         linkFive: "Podcast"
     },
+]
+
+export const HELP_LIST = [
+    {
+        title: "How We Help",
+        iconOne: <EyeIcon />,
+        iconTwo: <DollarIcon />,
+        iconThree: <ToolIcon />,
+        iconFour: <StickerIcon />,
+        iconFive: <ResultIcon />,
+        descriptionOne: "Drive More Awareness",
+        descriptionTwo: "Get More Customers",
+        descriptionThree: "Build Your Brand",
+        descriptionFour: "Improve Your Reputation",
+        descriptionFive: "Track Results",
+    },
+    {
+        title: "Who We Help",
+        descriptionOne: "Digital Advertising",
+        descriptionTwo: "Search Engine Ranking",
+        descriptionThree: "Contact Marketing",
+        descriptionFour: "Programic Advertising",
+        descriptionFive: "Email Marketing",
+    },
+    {
+        title: "Why Venveo",
+        descriptionOne: "About Us",
+        descriptionTwo: "Careers",
+        descriptionThree: "Growth Studies",
+        descriptionFour: "Testimonials",
+    }
 ]
