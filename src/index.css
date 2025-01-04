@@ -48,10 +48,21 @@
   background-color: black;
 }
 
+.custom-select {
+  background-image: url(https://i.postimg.cc/HshXMJsV/Vector-2.png);
+}
+
+select {
+  background-image: url(https://i.postimg.cc/Hkhkk5zk/arrow.png);
+  background-position: top 50% right 0px;
+  background-size: 8px;
+}
+
 input::placeholder {
   color: white;
   opacity: 60%;
 }
+
 .custom-input input::placeholder {
   color: white;
   opacity: 100%;

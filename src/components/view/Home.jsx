@@ -12,6 +12,7 @@ import LearnFromUs from '../LearnFromUs';
 import MultiChannel from '../MultiChannel';
 import YourGoals from '../YourGoals';
 import Footer from '../Footer';
+import BackToTop from '../../common/BackToTop';
 const Home = () => {
     return (
         <>
@@ -25,7 +26,8 @@ const Home = () => {
             <LearnFromUs />
             <MultiChannel />
             <YourGoals />
-            <Footer/>
+            <Footer />
+            <BackToTop />
         </>
     )
 }

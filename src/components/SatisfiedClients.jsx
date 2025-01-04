@@ -12,9 +12,9 @@ const SatisfiedClients = () => {
             <Heading secondText='SATISFIED CLIENTS.' spanText='1,400+' image={redLine} myAlt='red-ine' imgClass='h-3 max-sm:h-2 max-sm:bottom-2 max-md:w-[84px] w-[119px] !-translate-x-[85px] max-md:!-translate-x-16 bottom-0' />
             <div className='flex max-[1400px]:flex-wrap justify-center lg:gap-[60px] pt-7 max-[1400px]:pt-[88px] max-lg:pt-16 max-md:pt-12'>
                 {SATISIED_CLIENT_LIST.map((obj, i) => (
-                    <div key={i} className='w-1/3 max-[1200px]:w-1/2 max-sm:w-full mt-[60px] max-[1400px]:mt-0 max-lg:px-4 max-lg:pt-8 '>
+                    <div key={i} className='w-1/3 max-[1200px]:w-1/2 max-sm:w-full mt-[60px] max-[1400px]:mt-0 max-lg:px-4 max-lg:pt-8'>
                         <div className='relative pt-[35px] px-[29px] max-sm:px-6 pb-9 w-full '>
-                            <img src={obj.bgImage} alt={obj.bgImageAlt} className='absolute left-0 right-0 top-0 bottom-0 -z-10 w-full  h-full ' />
+                            <img src={obj.bgImage} alt={obj.bgImageAlt} className='absolute left-0 right-0 top-0 bottom-0 -z-10 w-full h-full' />
                             <div className='bg-white rounded-[25px] pt-[38px] pr-7 pb-[31px] pl-[29px] relative group/card max-md:p-5'>
                                 <img src={obj.logo} alt={obj.logoAlt} className='h-9' />
                                 <div className='py-6'>{obj.title}</div>

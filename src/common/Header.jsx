@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../assets/images/png/venveo-logo.png'
 import { NAV_LIST } from '../utils/helper'
-import { RightArrow, SearchIcon } from '../utils/icons'
+import { SearchIcon } from '../utils/icons'
 import CustomButton from './CustomButton'
 
 const Header = ({ myClass }) => {
@@ -31,10 +31,10 @@ const Header = ({ myClass }) => {
                     <img src={logo} alt="venveo-logo" className='h-[90px] max-lg:h-20 max-md:h-14 max-sm:h-16' />
                 </a>
             </div>
-            <div className={`flex items-center ${myClass} max-md:hidden `}>
+            <div className={`flex items-center ${myClass} max-md:hidden`}>
                 <div className='bg-white relative z-10 py-7 max-lg:py-4 flex item-center gap-[42px] max-lg:gap-5 max-lg:px-6 pl-[41.79px] pr-[29.5px]'>
                     {NAV_LIST.map((obj, i) => (
-                        <select key={i} name="venveo" id="myLink" className='cursor-pointer text-[15px] leading-[15px] font-maisonMedium outline-none '>
+                        <select key={i} name="venveo" id="myLink" className='cursor-pointer appearance-none bg-no-repeat pr-4 text-[15px] leading-[15px] font-maisonMedium outline-none'>
                             <option value={obj.title}>{obj.title}</option>
                             <option value={obj.optionOne}>{obj.optionOne}</option>
                             <option value={obj.optionTwo}>{obj.optionTwo}</option>
@@ -62,7 +62,7 @@ const Header = ({ myClass }) => {
                 }`}>
                 <div className=' relative z-10 flex flex-col item-center justify-center text-center gap-7'>
                     {NAV_LIST.map((obj, i) => (
-                        <select onChange={handleSelectChange} key={i} name="venveo" id="myLink" className='custom-select cursor-pointer text-[15px] text-white leading-[15px] font-maisonMedium outline-none max-md:mx-auto bg-transparent'>
+                        <select onChange={handleSelectChange} key={i} name="venveo" id="myLink" className='custom-select appearance-none pr-4 bg-no-repeat cursor-pointer text-[15px] text-white leading-[15px] font-maisonMedium outline-none max-md:mx-auto bg-transparent'>
                             <option value={obj.title}>{obj.title}</option>
                             <option value={obj.optionOne}>{obj.optionOne}</option>
                             <option value={obj.optionTwo}>{obj.optionTwo}</option>

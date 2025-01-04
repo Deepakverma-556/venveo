@@ -8,6 +8,8 @@ import { FacebookIcon, InstagramIcon, LearnMoreArrow, LinkedinIcon, TwitterIcon,
 
 const Footer = () => {
     const [active, setActive] = useState(0)
+    const year = new Date().getFullYear()
+
     const handleClick = (i) => {
         setActive(active === i ? "" : i)
     }
@@ -69,12 +71,12 @@ const Footer = () => {
             <div className='max-w-[1351px] mx-auto px-4 pt-20'>
                 <div className='flex flex-wrap -mx-3 justify-between items-center'>
                     <div className='w-3/12 px-3 max-md:hidden'>
-                        <a href="#logo" className='flex max-w-max'><img src={logo} alt="logo" className='h-14' /></a>
+                        <a href="#logo" className='flex max-w-max'><img src={logo} alt="logo" className='h-14'/></a>
                         <p className='font-maisonBook text-[13px] leading-5 text-white max-w-[273px] pt-[22px]'>Venveo is an award-winning digital marketing solutions provider. Since 2003.
-                            ©2024 Venveo</p>
+                            ©{year} Venveo</p>
                     </div>
                     <div className='w-4/12 max-md:w-full'>
-                        <div className='flex flex-wrap -mx-3'>
+                        <div className='flex flex-wrap sm:-mx-3'>
                             <div className='w-1/2 px-3 max-md:w-full max-md:text-center'>
                                 <p className='font-maisonMedium text-xs leading-[13px] text-white pb-[30px] max-md:pb-5'>VISIT</p>
                                 <p className='font-maisonBook text-[13px] leading-5 text-white'>100 N Main Street <br />
@@ -92,7 +94,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-3/12 flex flex-col justify-end items-end px-3 max-md:w-full '>
+                    <div className='w-3/12 flex flex-col justify-end items-end px-3 max-md:w-full'>
                         <div className='flex gap-8 max-lg:gap-3 max-md:hidden'>
                             <a href="#rights" className='font-maisonMedium text-[13px] leading-5 text-white hover:text-lemon transition-all duration-300'>All Rights Reserved</a>
                             <a href="#privacy-policy" className='font-maisonMedium text-[13px] leading-5 text-white hover:text-lemon transition-all duration-300'>Privacy Policy</a>
@@ -107,7 +109,7 @@ const Footer = () => {
                         <div className='w-3/12 px-3 md:hidden max-md:w-full '>
                             <a href="#logo" className='flex max-w-max mx-auto'><img src={logo} alt="logo" className='h-14' /></a>
                             <p className='font-maisonBook text-[13px] leading-5 text-white max-w-[273px] pt-3 pb-[37px] text-center mx-auto'>Venveo is an award-winning digital marketing solutions provider. Since 2003.
-                                ©2024 Venveo</p>
+                                ©{year} Venveo</p>
                         </div>
                         <div className='flex gap-8 md:hidden w-full justify-center'>
                             <a href="#rights" className='font-maisonMedium text-[13px] leading-5 text-white hover:text-lemon transition-all duration-300'>All Rights Reserved</a>

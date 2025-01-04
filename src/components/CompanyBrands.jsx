@@ -61,8 +61,8 @@ const CompanyBrands = () => {
                 <div className='pt-[49px] max-md:pt-10 max-sm:pt-5'>
                     <Slider {...settings}>
                         {COMAPNY_BRAND_LIST.map((obj, i) => (
-                            <a key={i} href="#brands w-0 flex ">
-                                <img key={i} src={obj.image} alt={obj.alt} className={` mx-auto ${i === 0 ? "h-7 max-sm:h-6" : i === 1 ? "h-9 max-sm:h-7 " : i === 2 ? "h-[27px] max-sm:h-6" : i === 3 ? "h-[27px] max-sm:h-6" : "h-7 max-sm:h-6"}`} />
+                            <a key={i} href="#brands w-0 flex">
+                                <img key={i} src={obj.image} alt={obj.alt} className={`mx-auto ${i === 0 ? "h-7 max-sm:h-6" : i === 1 ? "h-9 max-sm:h-7 " : i === 2 ? "h-[27px] max-sm:h-6" : i === 3 ? "h-[27px] max-sm:h-6" : "h-7 max-sm:h-6"}`} />
                             </a>
                         ))}
                     </Slider>
