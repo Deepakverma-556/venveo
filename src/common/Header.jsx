@@ -8,7 +8,7 @@ const Header = ({ myClass }) => {
     const [open, setOpen] = useState()
     useEffect(() => {
         const handleOverflow = () => {
-            if (open && window.innerWidth < 770) {
+            if (open && window.innerWidth < 780) {
                 document.body.classList.add("overflow-hidden");
             } else {
                 document.body.classList.remove("overflow-hidden");
