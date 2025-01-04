@@ -76,7 +76,7 @@ const Footer = () => {
                             ©{year} Venveo</p>
                     </div>
                     <div className='w-4/12 max-md:w-full'>
-                        <div className='flex flex-wrap sm:-mx-3'>
+                        <div className='flex flex-wrap'>
                             <div className='w-1/2 px-3 max-md:w-full max-md:text-center'>
                                 <p className='font-maisonMedium text-xs leading-[13px] text-white pb-[30px] max-md:pb-5'>VISIT</p>
                                 <p className='font-maisonBook text-[13px] leading-5 text-white'>100 N Main Street <br />
