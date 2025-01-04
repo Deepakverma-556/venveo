@@ -19,7 +19,7 @@ const CompanyBrands = () => {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                     autoplay: true,
                     autoplaySpeed: 1,
                     speed: 3000,
@@ -32,7 +32,7 @@ const CompanyBrands = () => {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                     autoplay: true,
                     autoplaySpeed: 1,
                     speed: 3000,
@@ -45,7 +45,7 @@ const CompanyBrands = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                     autoplay: true,
                     autoplaySpeed: 1,
                     speed: 3000,
@@ -68,7 +68,7 @@ const CompanyBrands = () => {
                     </Slider>
                 </div>
             </div>
-            <img src={doubleLine} alt="double-line" className='absolute h-[43px] -bottom-[74px] w-full max-lg:object-cover' />
+            <img src={doubleLine} alt="double-line" className='absolute h-[43px] -bottom-[74px] w-full max-lg:object-cover pointer-events-none' />
         </div>
     )
 }

@@ -38,7 +38,7 @@ const ActualResult = () => {
 
     return (
         <div className='mt-[90px] max-sm:mt-[438px] bg-actualResult bg-cover bg-no-repeat pt-[119px] max-sm:pt-[67px] pb-12 relative'>
-            <div className=' actual-result max-w-[1440px] mx-auto relative'>
+            <div className=' actual-result max-w-[1920px] mx-auto relative'>
                 <Description text='Actual business.' myClass='text-center !text-white !leading-[30px] max-sm:!text-2xl max-sm:!leading-[26px] !font-maisonLight !text-3xl' />
                 <Heading text="ACTUAL RESULTS." myClass='text-center !text-white' />
                 <Description text='Businesses trust Venveo to power grow.' myClass='!text-white text-center pt-[46px] max-sm:pt-[22px] max-sm:max-w-[283px] max-sm:mx-auto pb-20 max-md:pb-16 max-sm:pb-10' />

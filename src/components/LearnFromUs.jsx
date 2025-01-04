@@ -13,7 +13,7 @@ const LearnFromUs = () => {
         <Description text='Digital marketing resources from Venveo to help you grow.' myClass='text-center pt-[13px] max-sm:pt-3 max-sm:max-w-[311px] mx-auto' />
         <CustomLink text="See All" myClass="mx-auto mt-9 mb-20 max-sm:mt-[33px] max-sm:mb-10" myHref="#see" />
         <div className='bg-contractors bg-center bg-cover bg-no-repeat relative pt-[395px] pl-[29px] pb-[31px] max-sm:px-3 max-sm:pb-[15px]'>
-          <img src={brands} alt="made-for-brands" className='absolute h-[107px] right-[67px] -top-[29px] max-sm:hidden' />
+          <img src={brands} alt="made-for-brands" className='absolute h-[107px] right-[67px] -top-[29px] max-sm:hidden pointer-events-none' />
           <div className='bg-white rounded-3xl pt-[35px] pr-7 pb-[31px] pl-[29px] max-w-max sm:h-[324px] h-[259px] flex flex-col justify-between max-sm:pt-[30px] max-sm:pr-6 max-sm:pb-[26px] max-sm:pl-[25px]'>
             <div>
               <p className='text-babyGreen font-maisonDemi text-[15px] leading-5'>GUIDES</p>

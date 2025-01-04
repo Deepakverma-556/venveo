@@ -82,7 +82,7 @@ export const SATISIED_CLIENT_LIST = [
         title: <Description text="Driving digital revenue for over 1,000+ satisfied clients." myClass='!text-3xl max-md:!text-2xl max-md:!leading-7 !font-light !leading-[30px] !font-maisonLight' />,
         description: <Description text='Elevate your business with our top-tier services and tech' />,
         myLink: 'Learn More',
-        leadsPrecent: <Heading text='80%' myClass='!text-[50px] max-lg:!text-4xl max-md:!text-3xl max-sm:!text-[40px] !leading-[44px]' />,
+        leadsPrecent: <Heading text='80%' myClass='!text-[50px] max-lg:!text-4xl max-md:!text-3xl max-sm:!text-[40px] !leading-[44px]'/>,
         adLeads: <Heading text='2X' myClass='!text-[50px] max-lg:!text-4xl max-md:!text-3xl max-sm:!text-[40px] !leading-[44px]' />,
         webTrafficPrecent: <Heading text='520%' myClass='!text-[50px] max-lg:!text-4xl max-md:!text-3xl max-sm:!text-[40px] !leading-[44px]' />,
         leadsText: "Leads",
@@ -234,12 +234,12 @@ export const MULTI_CHANNEL_LIST = [
         description: <Description text="Understanding the process and maximize the opportunities" />,
     },
     {
-        myOption: "MULTI-CHANNEL-MARKETING",
+        myOption: "LEAD-GEN",
         title: "Get Your Sales Team Ready for Digital Leads",
         description: <Description text="unlock substantial business growth by enhancing collaboration skills and digital marketing expertise" />,
     },
     {
-        myOption: "MULTI-CHANNEL-MARKETING",
+        myOption: "ECOMMERCE",
         title: "How to Sell Building Materials Online",
         description: <Description text="Explore how selling building materials online opens up wider audiences, efficient sales and insightful data," />,
     },

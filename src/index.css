@@ -36,8 +36,11 @@
 
 @font-face {
   font-family: "Sohne Schmal";
-  src: url(./assets/fonts/TestSohneSchmal-Dreiviertelfett-BF663d89cad1b90.otf)
-    format("opentype");
+  src: url("./assets/fonts/sohne.woff2")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .right-arrow:hover svg path {
@@ -49,13 +52,14 @@
 }
 
 .custom-select {
-  background-image: url(https://i.postimg.cc/HshXMJsV/Vector-2.png);
+  background-image: url("https://i.postimg.cc/rmhtxCvR/white-arrow.png");
 }
 
 select {
-  background-image: url(https://i.postimg.cc/Hkhkk5zk/arrow.png);
+  background-image: url("https://i.postimg.cc/Hkhkk5zk/arrow.png");
   background-position: top 50% right 0px;
   background-size: 8px;
+  padding: 0px 5px;
 }
 
 input::placeholder {
@@ -77,7 +81,6 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 6px;
 }
 
 .actual-result .slick-dots li button:before {
@@ -85,12 +88,7 @@ input::placeholder {
   background: white;
   height: 6px !important;
   width: 6px !important;
-  margin-left: 7px !important ;
-}
-
-.brands .slick-dots li button:before {
-  font-size: 12px !important;
-  color: #0d99a0 !important;
+  margin-left: 7px !important;
 }
 
 @media (max-width: 600.99px) {

@@ -28,7 +28,7 @@ const Header = ({ myClass }) => {
         <div className='max-w-[1358px] mx-auto pt-[30px] max-lg:pt-2 max-sm:pt-4 max-md:flex max-md:items-center max-md:justify-between'>
             <div className=' max-w-max'>
                 <a href="#logo" className='relative z-10'>
-                    <img src={logo} alt="venveo-logo" className='h-[90px] max-lg:h-20 max-md:h-14 max-sm:h-16' />
+                    <img src={logo} alt="venveo-logo" className='h-[90px] max-lg:h-20 max-md:h-14 max-sm:h-16 pointer-events-none' />
                 </a>
             </div>
             <div className={`flex items-center ${myClass} max-md:hidden`}>
@@ -69,10 +69,10 @@ const Header = ({ myClass }) => {
                             <option value={obj.optionThree}>{obj.optionThree}</option>
                         </select>
                     ))}
-                    <a href="#search" className='search-icon group max-md:mx-auto'>
+                    <a onClick={() => setOpen(false)} href="#search" className='search-icon group max-md:mx-auto'>
                         <SearchIcon myclass='group-hover:fill-black transition-all duration-300' stroke='group-hover:stroke-black transition-all duration-300' />
                     </a>
-                    <CustomButton text="Let's Talk" myClass="max-lg:py-[20.5px] py-[32.5px] px-[31.63px]" />
+                    <CustomButton customOnClick={() => setOpen(false)} text="Let's Talk" myClass="max-lg:py-[20.5px] py-[32.5px] px-[31.63px]" />
                 </div>
             </div>
         </div>

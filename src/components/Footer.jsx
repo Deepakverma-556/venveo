@@ -71,7 +71,7 @@ const Footer = () => {
             <div className='max-w-[1351px] mx-auto px-4 pt-20'>
                 <div className='flex flex-wrap -mx-3 justify-between items-center'>
                     <div className='w-3/12 px-3 max-md:hidden'>
-                        <a href="#logo" className='flex max-w-max'><img src={logo} alt="logo" className='h-14'/></a>
+                        <a href="#logo" className='flex max-w-max'><img src={logo} alt="logo" className='h-14 pointer-events-none'/></a>
                         <p className='font-maisonBook text-[13px] leading-5 text-white max-w-[273px] pt-[22px]'>Venveo is an award-winning digital marketing solutions provider. Since 2003.
                             ©{year} Venveo</p>
                     </div>
@@ -107,7 +107,7 @@ const Footer = () => {
                             <a target='blank' href="https://www.youtube.com/" className='group'><YoutubeIcon myClass="group-hover:fill-lemon transition-all duration-300" /></a>
                         </div>
                         <div className='w-3/12 px-3 md:hidden max-md:w-full '>
-                            <a href="#logo" className='flex max-w-max mx-auto'><img src={logo} alt="logo" className='h-14' /></a>
+                            <a href="#logo" className='flex max-w-max mx-auto'><img src={logo} alt="logo" className='h-14 pointer-events-none' /></a>
                             <p className='font-maisonBook text-[13px] leading-5 text-white max-w-[273px] pt-3 pb-[37px] text-center mx-auto'>Venveo is an award-winning digital marketing solutions provider. Since 2003.
                                 ©{year} Venveo</p>
                         </div>

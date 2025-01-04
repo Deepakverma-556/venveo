@@ -32,8 +32,8 @@ const Outsmart = () => {
                         <CustomInput myPlaceholder='Enter Your Website' myType='text' text='Analyze' customSubmit={handleSubmit} customChange={handleChange} myValue={formValue.website} inputId='website' myClass='!bg-white my-input' buttonClass='!text-black hover:!text-lemon' inputClass='!text-black' />
                     </div>
                 </div>
-                <img src={curlyLine} alt="curly-line" className='h-[76px] absolute left-[46%] -bottom-12 max-sm:rotate-45 max-md:hidden' />
-                <img src={smCurlyLine} alt="sm-curly-line" className='absolute left-[46%] h-[102px] object-cover bottom-14 md:hidden' />
+                <img src={curlyLine} alt="curly-line" className='h-[76px] absolute left-[46%] -bottom-12 max-sm:rotate-45 max-md:hidden pointer-events-none' />
+                <img src={smCurlyLine} alt="sm-curly-line" className='absolute left-[46%] h-[102px] object-cover bottom-14 md:hidden pointer-events-none' />
             </div>
         </div>
     )

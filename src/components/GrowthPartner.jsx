@@ -37,7 +37,7 @@ const GrowthPartner = () => {
                 <Description text='Businesses trust Venveo to power grow.' myClass='max-w-[641px] max-sm:max-w-[293px] mx-auto text-center' />
                 <div className='flex items-center sm:justify-center gap-[78px] pt-[105px] max-md:pt-20 max-sm:pt-14 pb-[57px] max-md:pb-5 max-sm:overflow-x-auto'>
                     {MY_TAB.map((obj, index) => (
-                        <p key={index} onClick={() => handleClick(obj.domain)} className={`${open === obj.domain ? "" : "opacity-35"} text-black text-nowrap relative max-w-max font-maisonDemi text-center text-lg leading-[18px] cursor-pointer`}>{obj.title} {open === obj.domain && <img src={redUnderline} alt='red-underline' className='absolute' />}  </p>
+                        <p key={index} onClick={() => handleClick(obj.domain)} className={`${open === obj.domain ? "" : "opacity-35"} text-black text-nowrap relative max-w-max font-maisonDemi text-center text-lg leading-[18px] cursor-pointer`}>{obj.title} {open === obj.domain && <img src={redUnderline} alt='red-underline' className='absolute pointer-events-none' />}  </p>
                     ))}
                 </div>
                 {MY_TAB.map((obj, i) => (
@@ -52,11 +52,11 @@ const GrowthPartner = () => {
                                 </div>
                                 <div className='flex max-lg:justify-between max-lg:w-full lg:flex-col justify-between items-center max-lg:pt-10 max-md:gap-10 max-md:overflow-x-auto max-sm:mb-[99px]'>
                                     {INDUSTRY_LOGO_LIST.map((obj, i) => (
-                                        <img key={i} src={obj.image} alt={obj.logoAlt} className={`${i === 0 ? "h-[66px]" : i === 1 ? "h-[66px]" : i === 2 ? "h-[95px]" : i === 3 ? "h-[110px]" : "h-[23px]"}`} />
+                                        <img key={i} src={obj.image} alt={obj.logoAlt} className={`${i === 0 ? "h-[66px]" : i === 1 ? "h-[66px]" : i === 2 ? "h-[95px]" : i === 3 ? "h-[110px]" : "h-[23px]"} pointer-events-none`} />
                                     ))}
                                 </div>
                                 <div className='bg-white pt-[33px] px-[29px] pb-3 lg:mx-3 max-lg:mt-10 max-lg:mx-auto max-sm:pt-[15px] max-sm:px-[17px] max-sm:pb-[29px] max-sm:absolute left-1/2 max-sm:-translate-x-1/2 -bottom-[45%] max-sm:max-w-[332px] max-sm:w-full'>
-                                    <img src={matt} alt="matt" className='h-[276px] object-cover rounded-2xl max-sm:h-[140px] w-full' />
+                                    <img src={matt} alt="matt" className='h-[276px] object-cover rounded-2xl max-sm:h-[140px] w-full pointer-events-none' />
                                     <Description myClass="!font-maisonLight !text-3xl !leading-[30px] max-w-[377px] pt-10 pb-4 max-sm:!text-2xl max-sm:!leading-[26px] max-sm:pt-6" text="Matt Risinger on How to Develop Lasting Relationships with Builders" />
                                     <Description text="Chief Builder of Rising Build and founder of the Build Show Network" myClass="max-w-[371px]" />
                                     <CustomLink text="Listen To Interview" myHref="interview" myClass="mt-[46px]" />
@@ -66,11 +66,11 @@ const GrowthPartner = () => {
                                 <div className='bg-focused bg-cover bg-no-repeat h-[720px] pt-[75px] pl-[79px] relative max-md:pt-[37px] max-md:pl-5 max-sm:overflow-hidden'>
                                     <Heading text="PROVEN RESULTS" myClass='!text-white !text-start pb-2' />
                                     <Description myClass="!font-maisonLight !text-3xl !leading-[30px] !text-white max-sm:!text-2xl max-sm:!leading-[26px]" text="Not hopes and prayers." />
-                                    <img src={revenue} alt="revenue" className='absolute h-[304px] max-md:h-[248px] bottom-9 -left-10 max-sm:top-[20%] max-sm:left-[5%]' />
-                                    <img src={sizeOfPlatform} alt="size-of-platform" className='absolute h-[189px] max-md:h-40 left-[25%] top-[40%] max-sm:-left-8 max-sm:top-[55%]' />
-                                    <img src={reachAcross} alt="reach-across" className='absolute h-[189px] max-md:h-40 top-[23%] left-[43%] max-sm:left-12 max-sm:top-[76%]' />
-                                    <img src={battleTested} alt="battle-tested" className='absolute h-[189px] max-md:h-40 bottom-[15%] right-[20%] max-sm:left-[40%] max-sm:top-[55%]' />
-                                    <img src={growthRate} alt="growth-rate" className='absolute h-[189px] max-md:h-40 -right-[14px] top-[32%] max-sm:-right-10 max-sm:top-[76%]' />
+                                    <img src={revenue} alt="revenue" className='absolute h-[304px] max-md:h-[248px] bottom-9 -left-10 max-sm:top-[20%] max-sm:left-[5%] pointer-events-none' />
+                                    <img src={sizeOfPlatform} alt="size-of-platform" className='absolute h-[189px] max-md:h-40 left-[25%] top-[40%] max-sm:-left-8 max-sm:top-[55%] pointer-events-none' />
+                                    <img src={reachAcross} alt="reach-across" className='absolute h-[189px] max-md:h-40 top-[23%] left-[43%] max-sm:left-12 max-sm:top-[76%] pointer-events-none' />
+                                    <img src={battleTested} alt="battle-tested" className='absolute h-[189px] max-md:h-40 bottom-[15%] right-[20%] max-sm:left-[40%] max-sm:top-[55%] pointer-events-none' />
+                                    <img src={growthRate} alt="growth-rate" className='absolute h-[189px] max-md:h-40 -right-[14px] top-[32%] max-sm:-right-10 max-sm:top-[76%] pointer-events-none' />
                                 </div>
                                 :
                                 <div className='bg-proprietary bg-cover bg-no-repeat'>
@@ -78,14 +78,14 @@ const GrowthPartner = () => {
                                         <div className='flex-wrap -mx-3 flex justify-between items-center'>
                                             <div className='w-1/3 px-3 max-lg:w-5/12 max-md:w-full'>
                                                 <Heading text="PROJECT RADAR" myClass='!text-white !text-start pb-2' />
-                                                <img src={logoIpsum} alt="logoipsum" className='h-[51px]' />
+                                                <img src={logoIpsum} alt="logoipsum" className='h-[51px] pointer-events-none' />
                                                 <Description myClass="!font-maisonLight !text-3xl !leading-[30px] !text-white max-sm:!text-2xl max-sm:!leading-[26px] pt-[162px] pb-[14px] max-md:pt-20 max-sm:pt-10" text="Lorem ipsum what this product actually does." />
                                                 <Description text="This is placeholder but can add more the business of building, some epic fails (and how to avoid them) and everything building science." myClass="max-w-[360px] !text-white pb-12 max-lg:pb-10" />
                                                 <CustomButton text="Call to Action Somewhere" myClass="py-[31px] px-8 !gap-2" />
                                             </div>
                                             <div className='px-3 w-5/12 max-lg:w-1/2 max-md:w-full max-sm:absolute left-1/2 max-sm:-translate-x-1/2 -bottom-[35%] max-sm:max-w-[332px]'>
                                                 <div className='bg-white pt-[33px] px-[29px] pb-[37px] lg:mx-3 max-lg:mt-10 max-lg:mx-auto max-sm:pt-[15px] max-sm:px-[17px] max-sm:pb-[29px]'>
-                                                    <img src={myMap} alt="map" className='h-[276px] object-cover rounded-2xl max-sm:h-[140px] w-full' />
+                                                    <img src={myMap} alt="map" className='h-[276px] object-cover rounded-2xl max-sm:h-[140px] w-full pointer-events-none' />
                                                     <Description myClass="!font-maisonLight !text-3xl !leading-[30px] max-w-[377px] pt-10 pb-4 max-sm:!text-2xl max-sm:!leading-[26px] max-sm:pt-6" text="Feature goes here one particular feature can go here of course" />
                                                     <Description text="Secondary line to describe what this is in further detail of course" myClass="max-w-[371px]" />
                                                     <CustomLink text="Learn More" myHref="interview" myClass="mt-[46px]" />
